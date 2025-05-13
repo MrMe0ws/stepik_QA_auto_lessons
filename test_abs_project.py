@@ -5,6 +5,10 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import math
 
-browser = webdriver.Chrome()
 
-browser.get("http://suninjuly.github.io/explicit_wait2.html")
+class TestAbs:
+    def test_abs1(self):
+        assert abs(-42) == 42, "Should be absolute value of a number"
+
+    def test_abs2(self):
+        assert abs(-42) == -42, "Should be absolute value of a number"
