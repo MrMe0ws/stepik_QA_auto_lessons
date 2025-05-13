@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 
-
+# проверяем есть ли кнопка button.btn , ее нет, поэтому тест падает
 def test_exception1():
     try:
         browser = webdriver.Chrome()
@@ -15,7 +15,7 @@ def test_exception1():
     finally:
         browser.quit()
 
-
+#проверяем есть ли кнопка no_such_button , ее нет, поэтому тест ок
 def test_exception2():
     try:
         browser = webdriver.Chrome()
